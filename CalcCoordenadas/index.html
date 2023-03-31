@@ -7,18 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="init();"> 
     <Div id="main">
+        
         <div id="Cont_calculadora">
-            <p id="lat">Latitud</p>
-            <input type="text" name="Lat" id="lat_input">
-            <p id="long">LONG</p>
-            <input type="text" name="Long" id="long_input">
+            <h1 id="title">Coordinate Calculator</h1>
+            <h2 id="lat">Latitud</h2>
+            <input  id="lat_input">
+            <h2 id="long">LONG</h2>          
+            <input id="long_input">
             <button id="calc">Calcular</button>
         </div>
         <div id="respuesta">
-            
+            <h2>First coordinate</h2>
+            <table id="first_coordinate">
+                 <td colspan="4"><input id="first_lat"></input></td>
+                 <td colspan="4"><span>, -</span><input id="first_long"></input></td>
+            </table>
+            <h2>Second coordinate</h2>
+            <table id="first_coordinate">
+                <td colspan="4"><input id="second_lat"></span></td>
+                <td colspan="4"><span>, -</span><input id="second_long"></input></td> 
+            </table>
+            <h2>Third coordinate</h2>
+            <table id="first_coordinate">
+                <td colspan="4"><input id="third_lat"></input></td>
+                <td colspan="4"><span>, -</span><input id="third_long"></input></td> 
+            </table>
+            <h2>Fourth coordinate</h2>
+            <table id="first_coordinate">
+                <td colspan="4"><input id="fourth_lat"></input></td>
+                <td colspan="4"><span>, -</span><input id="fourth_long"></input></td>
+            </table>       
         </div>   
     </Div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
